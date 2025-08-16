@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<world name="demo_world" gravity="0.0 0.0 -3.0">
+
+    <!-- Define Toro robots in a vertical line along the y-axis -->
+    <robot name="toro0">
+        <model dir="./resources" path="./model/toro.urdf" name="toro0" />
+        <origin xyz="1.0 -4.5 -1.3" rpy="0 0 0" />
+    </robot>
+    <robot name="toro1">
+        <model dir="./resources" path="./model/toro.urdf" name="toro1" />
+        <origin xyz="0 -3.5 -1.3" rpy="0 0 0" />
+    </robot>
+    <robot name="toro2">
+        <model dir="./resources" path="./model/toro.urdf" name="toro2" />
+        <origin xyz="1.0 -2.5 -1.3" rpy="0 0 0" />
+    </robot>
+    <robot name="toro3">
+        <model dir="./resources" path="./model/toro.urdf" name="toro3" />
+        <origin xyz="0 -1.5 -1.3" rpy="0 0 0" />
+    </robot>
+    <robot name="toro4">
+        <model dir="./resources" path="./model/toro.urdf" name="toro4" />
+        <origin xyz="1.0 -0.5 -1.3" rpy="0 0 0" />
+    </robot>
+    <robot name="toro5">
+        <model dir="./resources" path="./model/toro.urdf" name="toro5" />
+        <origin xyz="0 0.5 -1.3" rpy="0 0 0" />
+    </robot>
+    <robot name="toro6">
+        <model dir="./resources" path="./model/toro.urdf" name="toro6" />
+        <origin xyz="1.0 1.5 -1.3" rpy="0 0 0" />
+    </robot>
+    <robot name="toro7">
+        <model dir="./resources" path="./model/toro.urdf" name="toro7" />
+        <origin xyz="0 2.5 -1.3" rpy="0 0 0" />
+    </robot>
+    <robot name="toro8">
+        <model dir="./resources" path="./model/toro.urdf" name="toro8" />
+        <origin xyz="1.0 3.5 -1.3" rpy="0 0 0" />
+    </robot>
+    <robot name="toro9">
+        <model dir="./resources" path="./model/toro.urdf" name="toro9" />
+        <origin xyz="0 4.5 -1.3" rpy="0 0 0" />
+    </robot>
+
+    <static_object name="Stage">
+        <origin xyz="0.0 0.0 -0.349" rpy="0 0 0" />
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="10 12 0.01" />
+            </geometry>
+        </visual>
+    </static_object>
+
+    <light name="light1" type="directional">
+        <position xyz="2.0 2.0 2.0" />
+        <lookat xyz="0.0 0.0 0.0" />
+    </light>
+
+    <light name="light2" type="directional">
+        <position xyz="-2.0 -2.0 2.0" />
+        <lookat xyz="0.0 0.0 0.0" />
+    </light>
+
+    <camera name="camera_fixed">
+        <position xyz="4.0 -4.0 8.0" />
+        <vertical xyz="0.0 0.0 20.0" />
+        <lookat xyz="4.0 0.0 0.0" />
+    </camera>
+
+</world>

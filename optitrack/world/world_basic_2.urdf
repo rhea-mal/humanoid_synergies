@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+
+
+<!-- <world name="demo_world" gravity="0.0 0.0 -3.0"> -->
+<world name="demo_world" gravity="0.0 0.0 0.0">
+
+	<!-- <robot name="HRP4C">
+		<model dir="./resources" path="model/HRP4c.urdf" name="HRP4C" /> 
+		<origin xyz="-1 0 1" rpy="0 0 0" />
+	</robot> -->
+
+	<robot name="HRP4C0">
+        <model dir="./resources" path="model/HRP4c_purple.urdf" name="HRP4C0" />
+        <!-- <origin xyz="1.0 -4.5 1" rpy="0 0 3.1415" /> -->
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </robot>
+
+    <robot name="HRP4C1">
+        <model dir="./resources" path="model/HRP4c_green.urdf" name="HRP4C1" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </robot>
+
+    <!-- <robot name="HRP4C2">
+        <model dir="./resources" path="model/HRP4c.urdf" name="HRP4C2" />
+        <origin xyz="1.0 -2.5 1" rpy="0 0 0" />
+    </robot>
+    <robot name="HRP4C3">
+        <model dir="./resources" path="model/HRP4c.urdf" name="HRP4C3" />
+        <origin xyz="0 -1.5 1" rpy="0 0 0" />
+    </robot>
+    <robot name="HRP4C4">
+        <model dir="./resources" path="model/HRP4c.urdf" name="HRP4C4" />
+        <origin xyz="1.0 -0.5 1" rpy="0 0 0" />
+    </robot>
+    <robot name="HRP4C5">
+        <model dir="./resources" path="model/HRP4c.urdf" name="HRP4C5" />
+        <origin xyz="0 0.5 1" rpy="0 0 0" />
+    </robot>
+    <robot name="HRP4C6">
+        <model dir="./resources" path="model/HRP4c.urdf" name="HRP4C6" />
+        <origin xyz="1.0 1.5 1" rpy="0 0 0" />
+    </robot>
+    <robot name="HRP4C7">
+        <model dir="./resources" path="model/HRP4c.urdf" name="HRP4C7" />
+        <origin xyz="0 2.5 1" rpy="0 0 0" />
+    </robot>
+    <robot name="HRP4C8">
+        <model dir="./resources" path="model/HRP4c.urdf" name="HRP4C8" />
+        <origin xyz="1.0 3.5 1" rpy="0 0 0" />
+    </robot>
+    <robot name="HRP4C9">
+        <model dir="./resources" path="model/HRP4c.urdf" name="HRP4C9" />
+        <origin xyz="0 4.5 1" rpy="0 0 0" />
+    </robot>  -->
+
+	<!-- <static_object name="Stage">
+		<origin xyz="0.0 0.0 -0.349" rpy="0 0 0" />
+	    <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="10 12 0.01" />
+            </geometry>
+            <material name="wood_material">
+                <script>
+                    <uri>file://wood.png</uri>
+                    <name>WoodMaterial</name>
+                </script>
+            </material>
+        </visual>
+	</static_object> -->
+
+<!-- 
+    <dynamic_object name="tester">
+		<origin xyz="1.0 -4 2" rpy="0 0 0" /> 
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="1" />
+            <inertia  ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+	    <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="3 3 3" />
+            </geometry>
+        </visual>
+	</dynamic_object> -->
+
+
+	<light name="light1" type="directional">
+		<position xyz="2.0 2.0 2.0" />
+		<lookat xyz="0.0 0.0 0.0" />
+	</light>
+
+	<light name="light2" type="directional">
+		<position xyz="-2.0 -2.0 2.0" />
+		<lookat xyz="0.0 0.0 0.0" />
+	</light>
+
+	<!-- <camera name="camera_fixed">
+		<position xyz="4.0 -4.0 8.0" />
+		<vertical xyz="0.0 0.0 20.0" />
+		<lookat xyz="4.0 0.0 0.0" />
+	</camera> -->
+
+    <!-- <camera name="camera_fixed">
+		<position xyz="4.0 0 0.8" />
+		<vertical xyz="0.0 0.0 1.0" />
+		<lookat xyz="0.0 0.0 0.0" />
+	</camera> -->
+
+    <camera name="camera_fixed">
+		<position xyz="4.0 0 0.8" />
+		<vertical xyz="0.0 0.0 1.0" />
+		<lookat xyz="0.0 0.0 0.0" />
+	</camera>
+
+</world>

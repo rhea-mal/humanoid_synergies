@@ -1,0 +1,63 @@
+# Controller settings 
+optitrack:
+  body_part_names: ["neck_link2", "trunk_rz", "hip_base", "LL_foot", "RL_foot", "la_end_effector", "ra_end_effector", "la_link4", "ra_link4", "LL_KOSY_L56", "RL_KOSY_L56"]
+  # indices: [5, 3, 2, 47, 50, 23, 32, 8, 27, 49, 45]
+  # indices: [4, 2, 1, 50, 46, 27, 9, 26, 7, 44, 48]
+  # body_part_names: ["neck_link2", "trunk_rz", "hip_base", "LL_foot", "RL_foot", "la_end_effector", "ra_end_effector", "la_link4", "ra_link4"]
+  indices: [4, 2, 1, 46, 50, 9, 27, 7, 26, 48, 44]  # from demo
+  # indices: [5, 3, 2, 47, 50, 23, 32, 8, 27]
+  # body_part_names: ["neck_link2", "trunk_rz", "hip_base", "LL_foot", "RL_foot", "la_end_effector", "ra_end_effector", "la_link4", "ra_link4"]
+  # indices: [5, 3, 2, 47, 50, 23, 32, 8, 27]
+  human_ids: [0, 1, 0]  # change first and second ID for hannah and tracy 
+  debug: true 
+  # limited_joints: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+  # limited_joints: [20, 21]
+  # limited_joints: [6, 9, 13, 16, 21, 36, 37, 24, 31]
+  limited_joints: [6, 9, 13, 16, 21, 11, 18]
+  z_rotation: 0  # or 180 depending 
+
+controller:
+  # links: ["hip_base", "LL_foot", "RL_foot", "la_end_effector", "ra_end_effector", "neck_link2", "trunk_rz", "ra_link4", "la_link4"]  # must match the body part names 
+  # points: [0, 0, 0, 0, 0, 0, 0, 0.11, 0.15, 0, 0]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "neck_link2", "trunk_rz", "la_end_effector", "ra_end_effector", "ra_link4", "la_link4"]  # must match the body part names 
+  # points: [0, 0, 0, 0.11, 0.15, 0, 0, 0, 0]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "neck_link2", "trunk_rz", "la_end_effector", "ra_end_effector"]  # must match the body part names 
+  # points: [0, 0, 0, 0.11, 0.15, 0, 0]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "neck_link2", "trunk_rz"]  # must match the body part names 
+  # points: [0, 0, 0, 0.11, 0.15]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "la_end_effector", "ra_link4", "la_link4", "ra_end_effector", "neck_link2", "trunk_rz"]  # must match the body part names 
+  # points: [0, 0, 0, 0, 0, 0, 0, 0.11, 0.15]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "la_end_effector", "ra_end_effector", "neck_link2"]  # must match the body part names 
+  # points: [0, 0, 0, 0, 0, 0, 0.11]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "trunk_rz", "la_end_effector", "ra_end_effector", "la_link4", "ra_link4"]  # must match the body part names 
+  # points: [0, 0, 0, 0, 0.05, 0.05, 0, 0]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "trunk_rz", "ra_end_effector"]  # must match the body part names 
+  # points: [0, 0, 0, 0.05, 0.15]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "trunk_rz", "ra_end_effector", "la_end_effector", "ra_link4", "la_link4"]  # must match the body part names 
+  # points: [0, 0.05, 0.05, 0.05, 0.05, 0.05, 0, 0]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "trunk_rz", "ra_end_effector", "la_end_effector"]  # must match the body part names 
+  # points: [0, 0.05, 0, 0.05, 0.05, 0.05]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "ra_end_effector", "la_end_effector", "trunk_rz"]  # must match the body part names 
+  # points: [0, 0.05, 0, 0.05, 0.05, 0.05, 0]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "trunk_rz", "ra_end_effector", "la_end_effector", "neck_link2", "ra_link4", "la_link4", "LL_KOSY_L56", "RL_KOSY_L56"]  # must match the body part names 
+  links: ["hip_base", "LL_foot", "RL_foot", "trunk_rz", "ra_end_effector", "la_end_effector", "neck_link2", "ra_link4", "la_link4"]  # must match the body part names 
+  # points: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  points: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "trunk_rz", "ra_end_effector", "la_end_effector"]  # must match the body part names 
+  # points: [0, 0.05, 0.05, 0.05, 0.05, 0.05, 0, 0]
+
+  # links: ["hip_base", "LL_foot", "RL_foot", "trunk_rz", "ra_end_effector", "la_end_effector"]  # must match the body part names 
+  # points: [0, 0.05, 0.05, 0.05, 0.05, 0.05, 0, 0]

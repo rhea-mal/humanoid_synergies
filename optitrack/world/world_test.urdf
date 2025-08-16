@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+
+
+<!-- <world name="demo_world" gravity="0.0 0.0 -3.0"> -->
+<world name="demo_world" gravity="0.0 0.0 -1.0">
+
+    <dynamic_object name="rhand">
+		<origin xyz="0 0 0" rpy="0 0 0" /> <!-- Corrected this line -->
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="1" />
+            <inertia  ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+	    <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.1 0.1 0.1" />
+            </geometry>
+            <material name = "default">
+                <color rgba="1.0 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+	</dynamic_object>
+
+    <dynamic_object name="lhand">
+		<origin xyz="0 0 0" rpy="0 0 0" /> <!-- Corrected this line -->
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="1" />
+            <inertia  ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+	    <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.1 0.1 0.1" />
+            </geometry>
+            <material name = "default">
+                <color rgba="0.0 1.0 0.0 1.0"/>
+            </material>
+        </visual>
+	</dynamic_object>
+
+    <dynamic_object name="rfoot">
+		<origin xyz="0 0 0" rpy="0 0 0" /> <!-- Corrected this line -->
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="1" />
+            <inertia  ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+	    <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.1 0.1 0.1" />
+            </geometry>
+            <material name = "default">
+                <color rgba="0.0 0.0 1.0 1.0"/>
+            </material>
+        </visual>
+	</dynamic_object>
+
+    <dynamic_object name="lfoot">
+		<origin xyz="0 0 0" rpy="0 0 0" /> <!-- Corrected this line -->
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="1" />
+            <inertia  ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+	    <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.1 0.1 0.1" />
+            </geometry>
+            <material name = "default">
+                <color rgba="1 1 1 1.0"/>
+            </material>
+        </visual>
+	</dynamic_object>
+
+    <dynamic_object name="head">
+		<origin xyz="0 0 0" rpy="0 0 0" /> <!-- Corrected this line -->
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="1" />
+            <inertia  ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+	    <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.1 0.1 0.1" />
+            </geometry>
+            <material name = "default">
+                <color rgba="1 1 0 1.0"/>
+            </material>
+        </visual>
+	</dynamic_object>
+
+    <dynamic_object name="torso">
+		<origin xyz="0 0 0" rpy="0 0 0" /> <!-- Corrected this line -->
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="1" />
+            <inertia  ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+	    <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.1 0.1 0.1" />
+            </geometry>
+            <material name = "default">
+                <color rgba="0 1 1 1.0"/>
+            </material>
+        </visual>
+	</dynamic_object>
+
+	<light name="light1" type="positional">
+		<position xyz="2.0 2.0 2.0" />
+		<lookat xyz="0.0 0.0 0.0" />
+	</light>
+
+	<light name="light2" type="positional">
+		<position xyz="-2.0 -2.0 2.0" />
+		<lookat xyz="0.0 0.0 0.0" />
+	</light>
+
+	<!-- <camera name="camera_fixed">
+		<position xyz="4.0 -4.0 8.0" />
+		<vertical xyz="0.0 0.0 20.0" />
+		<lookat xyz="4.0 0.0 0.0" />
+	</camera> -->
+
+    <camera name="camera_fixed">
+		<position xyz="-4.0 0 0.8" />
+		<vertical xyz="0.0 0.0 1.0" />
+		<lookat xyz="0.0 0.0 0.0" />
+	</camera>
+
+</world>
